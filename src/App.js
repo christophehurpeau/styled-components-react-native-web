@@ -1,9 +1,14 @@
+import styled from 'styled-components/native';
 import logo from './logo.svg';
 import './App.css';
 
+const AppView = styled.View`
+  text-align: center;
+`;
+
 function App() {
   return (
-    <div className="App">
+    <AppView>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +23,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </AppView>
   );
 }
 
